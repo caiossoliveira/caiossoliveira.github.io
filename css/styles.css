@@ -20,6 +20,7 @@ header {
   justify-content: center;
   font-family: 'Roboto Slab', serif;
   border: 2px solid black;
+  text-align: center;
 }
 
 /* Nav style */
