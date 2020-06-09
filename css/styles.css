@@ -8,7 +8,6 @@ body {
   margin: 0;
   background-color: #DADADA;
   font-family: sans-serif;
-  height: 100%;
 }
 
 /* Header style */
@@ -121,9 +120,26 @@ a:hover {
 footer {
 	text-align: center;
 	border: 2px solid black;
-	padding: 0.5%;
+	padding-top: 1%;
+  padding-bottom: 0.15%;
 	margin-bottom: 0px;
 	margin-top: 0px;
   font-family: 'Roboto' sans-serif;
   height: 45px;
+}
+
+/*<p> in footer*/
+p#myName{
+  text-align:center; 
+  float:center; 
+  margin: 10px 0 3px 0;
+}
+
+h6#iconReference{
+  text-align:right; 
+  float:right; 
+  display: inline; 
+  margin: 0;
+  font-weight: normal;
+  font-size: 9px;
 }
