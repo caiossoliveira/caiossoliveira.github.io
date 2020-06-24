@@ -1,6 +1,12 @@
-function selectCurriculum() {
-  //document.getElementById("demo").writeHTML = "Paragraph changed.";
-  //alert("HELLO");
-  document.getElementById("currilucumLanguages").classList.toggle("show");
+function selectCurriculum(){
+  document.getElementById("currilucumLanguages").style.display = "block";
+}
+
+function toClose(){
+	document.getElementById("currilucumLanguages").style.display = "none";
+}
+
+function toAlert(){
+	alert("HELLO");
 }
 
