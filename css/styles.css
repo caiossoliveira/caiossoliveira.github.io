@@ -4,17 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
 
 /* For all the page */
-body {
+html, body {
   margin: 0;
   background-color: #DADADA;
   font-family: sans-serif;
-  height: 100%;
 }
 
 /* begin of the header style */
 header {
   display: flex;
-  height: 70px;
+  /*height: 70px;*/
+  min-height: 70px;
+  height: calc(100vh * 0.07); /*calculates the header, but with a minimium size*/
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -32,8 +33,10 @@ header {
   overflow: hidden;
   border: 2px solid black;
   background-color: #24292e;
-  /*width: 100%;
-  height: 50px;*/
+  /*width: 100%;*/
+  /*height: 50px;*/
+  min-height: 43px;
+  height: calc(100vh * 0.045);
 }
 
 /* Style the topnav links */
@@ -43,8 +46,9 @@ header {
   border: 1px solid black;
   border-top: 0;
   border-bottom: 0;
-  margin-right: 2%;
-  margin-left: 2%;
+  /*margin-right: 2%;*/
+  /*margin-left: 2%;*/
+  margin-left: 59px;
   text-decoration: none;
   /*color: #f2f2f2;*/
   color: #DADADA;
@@ -69,7 +73,8 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   width: 215px;
-  margin: 47px 0 0 134px;
+  /*margin: 47px 0 0 134px;*/
+  margin: 47px 0 0 175px;
   padding: 2px 0 2px 0;
   border: 2px;
   border-style: solid;
@@ -84,6 +89,10 @@ header {
   display: block;
   color: #dadada;
   font-size: 16px;
+  margin: 2px;
+  border-right: 0;
+  border-style: solid;
+  border-color: #24292e;
 }
 
 /*items hover*/
@@ -94,7 +103,7 @@ header {
 /*.dropdown:hover .dropdown-content {
   display: block;
 }
-/*end of dropdown style*/
+/*end of dropdown style (curriculum options items style)*/
 
 
 /*begin of about me style*/
@@ -102,6 +111,8 @@ header {
 section {
   display: -webkit-flex;
   display: flex;
+  min-height: calc(100vh - 121px);
+  /*max-height: calc(100vh * 0.885);*/
 }
 
 /*The contact div*/
