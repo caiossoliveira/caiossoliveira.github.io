@@ -1,14 +1,26 @@
+//curinga functions
+
+function toAlert(){
+	alert("HELLO");
+}
+
+//nav functions
 function selectResume(){
   if(isFirstClick()){
   	document.getElementById("currilucumLanguages").style.display = "block";
   }
   else{
-  	toClose();
+  	toCloseSR();
   }
+}
+
+function toCloseSR(){
+	document.getElementById("currilucumLanguages").style.display = "none";
 }
 
 function toClose(){
 	document.getElementById("currilucumLanguages").style.display = "none";
+	isFirstClick.isFirstClick = !isFirstClick.isFirstClick;
 }
 
 function isFirstClick(){
@@ -20,9 +32,5 @@ function isFirstClick(){
 	}
 
 	return isFirstClick.isFirstClick;
-}
-
-function toAlert(){
-	alert("HELLO");
 }
 
