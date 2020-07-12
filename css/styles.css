@@ -26,6 +26,12 @@ header {
 
 /*end of the header style*/
 
+.fixedDiv{
+  background-color: #dadada;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /* begin of the nav style */
 /* Style the top navigation bar */
@@ -108,11 +114,18 @@ header {
 
 /*begin of about me style*/
 /* Container for flexboxes */
-section {
+.AboutMe{
+  margin-top: 120px;
   display: -webkit-flex;
   display: flex;
   min-height: calc(100vh - 121px);
   /*max-height: calc(100vh * 0.885);*/
+}
+
+.project{
+  display: -webkit-flex;
+  display: flex;
+  min-height: calc(100vh - 121px);
 }
 
 /*The contact div*/
@@ -123,6 +136,15 @@ div#perfil {
   -ms-flex: 1;
   flex: 1;
   border: 2px solid black;
+}
+
+div#projDescription{
+  font-family: 'Roboto Slab', serif;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 2px solid black;
+  min-width: 50%;
 }
 
 /*Introduction*/
@@ -148,13 +170,23 @@ div#perfilImage{
 	padding: 2px;
 }
 
+div#projImage{
+  text-align: center;
+}
+
 div#contact{
 	text-align: center;
 	padding: 4px;
 }
 
-h2, h3, h4, h5{
+h2, h4{
+  margin: 4px;
+  font-weight: bold;
+}
+
+h3, h5{
 	margin: 4px;
+  font-weight: normal;
 }
 
 /*my social medias*/
@@ -172,6 +204,61 @@ a:hover {
 }
 
 /*end of about me style*/
+
+
+/*begin of portfolio style*/
+/*body .slick-next, body .slick-prev{
+  top: 50%;
+}*/
+.portfolio{
+  padding-top: 10px;
+  text-align:center;
+  border: 2px solid black;
+}
+.carousel{
+  width: 90%;
+  margin: 0px auto;
+}
+.slick-slide{
+  margin: 10px;
+}
+.slick-slide img{
+  width: 100%;
+  /*border: 2px solid black;*/
+  font-size: 30px;
+}
+
+.slick-prev:before{
+  top: 50%;
+  font-size: 30px;
+  /*color: red;
+  content: "<";*/
+}
+
+.slick-next:before{
+  top: 50%;
+  font-size: 30px;
+}
+
+a.projects{
+  padding: 0;
+  text-decoration: none;
+}
+
+div.projects{
+  border: 2px solid black;
+  padding: 2px;
+}
+
+.projects:hover{
+  color: black;
+}
+
+/*img#cameron{
+  width: 90%;
+  height: 90%;
+}*/
+/*end of portfolio style*/
 
 /* begin of footer style*/
 footer {

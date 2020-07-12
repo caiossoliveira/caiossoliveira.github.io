@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>FAST Engine</title>
+</head>
+<body>
+	<header>
+		<h1 id="pageHeader"> FAST Engine for Market Data </h1>
+	</header>
+	<section class="project">
+		<div id="projDescription">
+			<div id="projImage">
+				<img src="img/fastEngine.png" width="93.7%" height="93.7%" alt="Block diagram of FAST Engine">
+			</div>
+			<div id="description">
+				<h3> Development of Parameterizables Components in Hardware Following FIX/FAST Standards. </h3>
+				<h4> FIX FAST FPGA HFT </h4>
+				<h4> Institute of Mathematical and Computing Sciences (ICMC) </h4>
+				<h4> University of São Paulo (USP) </h4>
+				<h5> São Carlos - SP / Brazil </h5>
+			</div>
+		</div>
+		<article>
+	    	<h1 class="article"> Article </h1>
+	    	<h2 class="item"> Brief </h2>
+			<p class= "chapter"> This is the project that I am developing now during my master's degree. </p>
+			<h2 class="item"> Abstract </h2>
+			<p class= "chapter"> With the ever-increasing volume of data associated with the financial market, there is a growing need for fast and flexible computing solutions. Among the various forms of trading in the market, High-Frequency Trading (HFT) systems require high computational power for real-time trading and data analysis. This work implements the modules needed to decode messages following the FIX and FAST protocol, currently adopted by the B3 stock exchange. The modules will be implemented in FPGA-based hardware with parameterization capability to control market data format and data type. </p>
+			<h2 class="item"> Objective </h2>
+			<p class="chapter"> The objective of this work is to develop a FPGA hardware architecture, that is compatible with the FAST 1.1 standard, which can be parameterized to receive data from the financial market. The hardware parameterization should reflect the user's settings concerning the desired properties of the data to optimize the hardware resources necessary for the implementation of the components in FPGA.</p>
+			<h2 class="item"> Methodology and Partial Results </h2>
+			<p class="chapter"> I am developing a software version in C language of the components of the engine. I now have a version that can read a binary file containing a FAST message's log, decode to FIX messages, and generate an order book. The next step is to do a performance evaluation os the modules that compose the software and evaluate the viability of to hardware accelerate these modules. The High-Level Syntheses (HLS) tool from Intel, the Intel HLS, will be used to accelerate the modules. </p>
+	  	</article>
+	</section>
+
+	<footer>
+		<p id="myName"> Caio Oliveira 2020 </p>
+	</footer>
+</body>
+</html>
